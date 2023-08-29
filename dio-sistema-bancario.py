@@ -68,23 +68,6 @@ def sacar(*, saldo, valor, extrato, limite, numero_saques, limite_saques):
     
     return saldo, extrato, numero_saques
 
-'''
-def criar_cliente(clientes):
-    nome = str(input("Informe o nome do cliente: "))
-    nascimento = str(input("Informe a data de nascimento do cliente (DD/MM/YYYY): "))
-    cpf = int(input("Informe o CPF do cliente (XXXXXXXXXXX): "))
-    logradouro = str(input("Informe o logradouro do cliente: "))
-    nro = int(input("Informe o número do endereço do cliente: "))
-    bairro = str(input("Informe o bairro do cliente: "))
-    cidade = str(input("Informe a cidade do cliente: "))
-    uf = str(input("Informe a sigla do estado do cliente: "))
-
-    endereco = f"{logradouro}, {nro} - {bairro} - {cidade}/{uf}"
-    cliente = {"nome": nome,"nascimento": nascimento,"cpf": cpf,"endereco": endereco}
-    
-    return clientes + cliente
-'''
-
 def exibir_extrato(saldo,/,*,extrato):
     print("\n=============== EXTRATO BANCÁRIO ===============")
     print("Não foram realizadas movimentações." if not extrato else extrato)
